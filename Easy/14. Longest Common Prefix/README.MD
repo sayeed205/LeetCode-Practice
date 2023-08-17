@@ -25,5 +25,5 @@ All given inputs are in lowercase letters `a-z`.
 
 **Constraints:**
 
-- `0 <= strs.length <= 200`
-- `0 <= strs[i].length <= 200`
+-   `0 <= strs.length <= 200`
+-   `0 <= strs[i].length <= 200`

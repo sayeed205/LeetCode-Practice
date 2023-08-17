@@ -4,7 +4,7 @@ Given an integer `x`, return `true` if `x` is palindrome integer.
 
 An integer is a palindrome when it reads the same backward as forward.
 
-- For example, `121` is palindrome while `123` is not.
+-   For example, `121` is palindrome while `123` is not.
 
 **Example 1:**
 
@@ -31,10 +31,6 @@ Explanation: Reads 01 from right to left. Therefore it is not a palindrome.
 
 **Constraints:**
 
-- `-2^31 <= x <= 2^31 - 1`
+-   `-2^31 <= x <= 2^31 - 1`
 
 **Follow up:** Could you solve it without converting the integer to a string?
-
-## Solution
-
-- wip

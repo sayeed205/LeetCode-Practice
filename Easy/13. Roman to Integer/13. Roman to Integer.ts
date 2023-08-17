@@ -1,9 +1,5 @@
-/**
- * @param {string} s
- * @return {number}
- */
-var romanToInt = function (s) {
-    const romanValues = {
+function romanToInt(s: string): number {
+    const romanValues: { [key: string]: number } = {
         I: 1,
         V: 5,
         X: 10,
@@ -24,4 +20,4 @@ var romanToInt = function (s) {
     }
 
     return result;
-};
+}

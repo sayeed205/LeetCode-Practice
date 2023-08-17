@@ -32,5 +32,5 @@ Every close bracket has a corresponding open bracket of the same type
 
 **Constraints:**
 
-- `1 <= s.length <= 10^4`
-- `s` consists of parentheses only `'()[]{}'`.
+-   `1 <= s.length <= 10^4`
+-   `s` consists of parentheses only `'()[]{}'`.

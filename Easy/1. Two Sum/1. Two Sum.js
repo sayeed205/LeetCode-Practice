@@ -3,28 +3,16 @@
  * @param {number} target
  * @return {number[]}
  */
-const twoSum = function (nums, target) {
-  let map = new Map();
-  for (let i = 0; i < nums.length; i++) {
-    if (map.has(target - nums[i])) {
-      return [map.get(target - nums[i]), i];
+var twoSum = function (nums, target) {
+    const numToIndex = new Map();
+
+    for (let i = 0; i < nums.length; i++) {
+        const complement = target - nums[i];
+        if (numToIndex.has(complement)) {
+            return [numToIndex.get(complement), i];
+        }
+        numToIndex.set(nums[i], i);
     }
-    map.set(nums[i], i);
-  }
-  return [];
+
+    throw new Error('No two elements add up to the target.');
 };
-
-/* <=================== alternative ans ===================> */
-
-/**  const twoSum = (nums, target) => {
- *  let ans = {};
- *  for (let i = 0; i < nums.length; i++) {
- *  if (ans[target - nums[i]] !== undefined) {
- *  return [ans[target - nums[i]], i];
- *    }
- *    ans[nums[i]] = i;
- *  }
- *
- *  return [];
- *};
- */
