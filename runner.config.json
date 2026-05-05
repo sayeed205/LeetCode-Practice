@@ -1,0 +1,18 @@
+{
+  "defaultTimeoutMs": 5000,
+  "ignoreDirs": [
+    ".git",
+    ".idea",
+    ".vscode",
+    ".runner",
+    "target",
+    "node_modules"
+  ],
+  "cleanupTmp": true,
+  "runners": {
+    "python": ["uv run python", "python3", "python", "py"],
+    "javascript": ["bun", "node", "deno run --allow-read"],
+    "typescript": ["bun", "deno run --allow-read", "tsx"],
+    "rust": ["cargo", "rustc"]
+  }
+}
