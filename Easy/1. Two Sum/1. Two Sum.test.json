@@ -19,6 +19,96 @@
       "args": [[3, 3], 6],
       "expected": [0, 1],
       "timeoutMs": 1000
+    },
+    {
+      "name": "negative numbers",
+      "args": [[-1, -2, -3, -4, -5], -8],
+      "expected": [2, 4],
+      "timeoutMs": 1000
+    },
+    {
+      "name": "positive and negative sum to zero",
+      "args": [[-3, 4, 3, 90], 0],
+      "expected": [0, 2],
+      "timeoutMs": 1000
+    },
+    {
+      "name": "two zeroes",
+      "args": [[0, 4, 3, 0], 0],
+      "expected": [0, 3],
+      "timeoutMs": 1000
+    },
+    {
+      "name": "zero plus target",
+      "args": [[0, 2, 3, 7], 7],
+      "expected": [0, 3],
+      "timeoutMs": 1000
+    },
+    {
+      "name": "duplicate complement",
+      "args": [[1, 5, 5, 11], 10],
+      "expected": [1, 2],
+      "timeoutMs": 1000
+    },
+    {
+      "name": "pair at start and end",
+      "args": [[10, 20, 30, 45, 50], 60],
+      "expected": [0, 4],
+      "timeoutMs": 1000
+    },
+    {
+      "name": "large opposite numbers",
+      "args": [[1000000000, -1000000000, 3, 7], 0],
+      "expected": [0, 1],
+      "timeoutMs": 1000
+    },
+    {
+      "name": "negative target with mixed values",
+      "args": [[5, -10, 15, -20], -5],
+      "expected": [0, 1],
+      "timeoutMs": 1000
+    },
+    {
+      "name": "minimum length array",
+      "args": [[1, 2], 3],
+      "expected": [0, 1],
+      "timeoutMs": 1000
+    },
+    {
+      "name": "pair near end",
+      "args": [[8, 1, 2, 3, 4, 9], 13],
+      "expected": [4, 5],
+      "timeoutMs": 1000
+    },
+    {
+      "name": "complement appears before current",
+      "args": [[4, 1, 9, 7], 10],
+      "expected": [1, 2],
+      "timeoutMs": 1000
+    },
+    {
+      "name": "repeated values cannot reuse same index",
+      "args": [[2, 5, 5, 7], 10],
+      "expected": [1, 2],
+      "timeoutMs": 1000
+    },
+    {
+      "name": "target from two negatives in mixed array",
+      "args": [[6, -4, 8, -2, 10], -6],
+      "expected": [1, 3],
+      "timeoutMs": 1000
+    },
+    {
+      "name": "target from same negative value duplicate",
+      "args": [[-5, 1, -5, 3], -10],
+      "expected": [0, 2],
+      "timeoutMs": 1000
+    },
+    {
+      "name": "large positive pair",
+      "args": [[2147483647, 1, 2, 2147483646], 4294967293],
+      "expected": [0, 3],
+      "timeoutMs": 1000
     }
   ]
 }
