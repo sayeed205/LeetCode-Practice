@@ -355,3 +355,6 @@ Cargo.lock
 rust-project.json
 
 # End of https://www.toptal.com/developers/gitignore/api/java,node,python,rust,rust-analyzer
+
+.runner
+.idea
