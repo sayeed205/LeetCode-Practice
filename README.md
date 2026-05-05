@@ -13,7 +13,7 @@ Profile: [Hitarashi](https://leetcode.com/hitarashi/)
 ├── Hard/
 ├── src/                  # Rust runner implementation
 ├── runner.config.json    # Runner config
-├── run-leetcode.sh       # Script launcher
+├── runner                # Script launcher
 └── Cargo.toml            # Runner crate
 ```
 
@@ -45,7 +45,7 @@ Java files may exist in the repository, but JVM execution is intentionally skipp
 Use the root script:
 
 ```bash
-./run-leetcode.sh
+./runner
 ```
 
 Or run the Rust crate directly:
